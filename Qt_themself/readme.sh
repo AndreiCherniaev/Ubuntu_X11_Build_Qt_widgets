@@ -1,7 +1,6 @@
 # host: Ubuntu 22
-# sudo apt-get build-dep qtbase5-dev cmake ninja-build
+# sudo apt-get build-dep cmake ninja-build
 # sudo apt-get build-dep qtbase5-dev
-# sudo apt-get install libmd4c*
 
 # This steps use Qt mirror on github because of fast downloading from github. But you can use 
 # git clone git://code.qt.io/qt/qt5.git qt5
