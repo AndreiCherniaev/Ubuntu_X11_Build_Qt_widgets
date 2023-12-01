@@ -1,5 +1,8 @@
 To build Qt (themself) with widgets for Ubuntu 22.
 
+# Ubuntu 22 with X11
+Please switch to Xorg istead of Wayland.
+
 # Prepare
 ```
 git clone https://github.com/AndreiCherniaev/Ubutu_Build_Qt_widgets.git
@@ -22,5 +25,6 @@ echo $XDG_SESSION_TYPE
 export QT_DEBUG_PLUGINS=1
 # export QT_QPA_PLATFORM=linuxfb
 # export QT_QPA_EGLFS_FB=/dev/fb0
+# sudo adduser $USER video
 "$MyBaseDir/example/readme.sh"
 ```
