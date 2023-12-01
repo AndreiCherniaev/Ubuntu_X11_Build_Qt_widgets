@@ -1,3 +1,4 @@
+build-*
 build-host_debug/
 build-host/
 build-cross/

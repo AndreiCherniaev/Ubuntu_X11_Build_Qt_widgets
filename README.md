@@ -14,5 +14,5 @@ Qt_themself/readme.sh
 
 # Build example
 ```
-fortuneclient/readme.sh
+example/readme.sh
 ```
