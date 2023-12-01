@@ -1,4 +1,4 @@
-To test Qt for Ubuntu with widgets.
+To build Qt (themself) with widgets for Ubuntu 22.
 
 # Prepare
 ```
