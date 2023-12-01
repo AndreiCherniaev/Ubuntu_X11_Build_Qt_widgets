@@ -33,8 +33,8 @@ set(FEATURE_pkg_config OFF)
 #set(BUILD_WITH_PCH OFF)
 #set(FEATURE_x86intrin OFF)
 #build static Qt 
-set(BUILD_SHARED_LIBS OFF) #Build Qt statically (OFF) or dynamically (ON)
-set(FEATURE_static ON)
+set(BUILD_SHARED_LIBS ON) #Build Qt statically (OFF) or dynamically (ON)
+#set(FEATURE_static ON)
 #no qmake
 #set(FEATURE_qmake OFF)
 
