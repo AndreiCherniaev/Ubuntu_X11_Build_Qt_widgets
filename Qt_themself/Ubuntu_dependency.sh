@@ -5,7 +5,7 @@ pip install cmake ninja
 
 # Unfochently pip install to some path which is not in PATH. So Ubuntu can't find cmake. Fix it
 export myName=$USER && sudo -E bash -c 'cat <<EOF > /etc/profile.d/local_bin_to_PATH.sh
-/home/$myName/.local/bin
+export PATH="$PATH:/home/$myName/.local/bin"
 EOF'
 sudo chmod a+x /etc/profile.d/local_bin_to_PATH.sh
 source /etc/profile.d/local_bin_to_PATH.sh
