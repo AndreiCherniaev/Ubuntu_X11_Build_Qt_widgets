@@ -17,7 +17,7 @@ rm -Rf ${MyQtBaseDir}/build_host_powerfull/ ${MyQtBaseDir}/build_artifacts_host_
 git clone https://github.com/qt/qt5 qt5
 cd qt5
 # git switch 6.6.0
-perl init-repository --module-subset=qtbase,qtserialport,qtcharts
+perl init-repository --module-subset=qtbase
 
 export QT_DEBUG_PLUGINS=1
 # export QT_QPA_EGLFS_FB=/dev/fb0
