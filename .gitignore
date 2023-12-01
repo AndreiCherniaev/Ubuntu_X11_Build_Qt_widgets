@@ -1,0 +1,23 @@
+build-host_debug/
+build-host/
+build-cross/
+Qt_themself/build_host/
+Qt_themself/build_artifacts_host/
+Qt_themself/build_cross/
+Qt_themself/build_artifacts_cross/
+Qt_themself/build_host_powerfull/
+Qt_themself/build_artifacts_host_powerfull/
+*.res
+*.rc
+/.qmake.cache
+/.qmake.stash
+
+# qtcreator generated files
+*.pro.user*
+CMakeLists.txt.user*
+
+*.img
+*.bkp
+*.ko
+*.mod
+qt5/
