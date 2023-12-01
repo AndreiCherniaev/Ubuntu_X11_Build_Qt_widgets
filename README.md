@@ -12,7 +12,7 @@ export MyBaseDir="$PWD/Ubutu_Build_Qt_widgets"
 # Build Qt themself
 Install dependency
 ```
-"$MyBaseDir/Qt_themself/Ubuntu_dependency.sh"
+. "$MyBaseDir/Qt_themself/Ubuntu_dependency.sh"
 ```
 Build Qt themself
 ```
