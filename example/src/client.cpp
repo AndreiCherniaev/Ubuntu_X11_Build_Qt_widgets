@@ -15,8 +15,7 @@ Client::Client(QWidget *parent)
     auto portLabel = new QLabel(tr("S&erver port:"));
     portLabel->setBuddy(portLineEdit);
 
-    statusLabel = new QLabel(tr("This examples requires that you run the "
-                                "Fortune Server example as well."));
+    statusLabel = new QLabel(tr("This examples"));
 
     getFortuneButton->setDefault(true);
     getFortuneButton->setEnabled(true);
