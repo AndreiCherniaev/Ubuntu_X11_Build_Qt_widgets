@@ -1,11 +1,12 @@
 # host: Ubuntu 22
 # sudo apt-get build-dep qtbase5-dev cmake ninja-build
 # sudo apt-get build-dep qtbase5-dev
+# sudo apt-get install libmd4c*
 
 # This steps use Qt mirror on github because of fast downloading from github. But you can use 
 # git clone git://code.qt.io/qt/qt5.git qt5
 
-export MyQtBaseDir=$PWD
+export MyQtBaseDir="$MyBaseDir/Qt_themself"
 # Prepare Qt
 cd ${MyQtBaseDir}
 # Qt's folders must be clear: remove and create its again
@@ -15,7 +16,7 @@ rm -Rf ${MyQtBaseDir}/build_host_powerfull/ ${MyQtBaseDir}/build_artifacts_host_
 #rm -Rf ${MyQtBaseDir}/qt5/
 git clone https://github.com/qt/qt5 qt5
 cd qt5
-git switch 6.6.0
+# git switch 6.6.0
 perl init-repository --module-subset=qtbase,qtserialport,qtcharts
 
 export QT_DEBUG_PLUGINS=1
