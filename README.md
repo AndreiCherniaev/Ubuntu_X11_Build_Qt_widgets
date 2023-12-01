@@ -5,7 +5,12 @@ Please switch to Xorg istead of Wayland. Test
 ```
 echo $XDG_SESSION_TYPE
 ```
-Should be x11
+Should be x11  
+Then make avaliable all dev pack
+```
+sudo nano /etc/apt/sources.list
+```
+and uncomment all strings with "deb-src"
 
 # Prepare
 ```
