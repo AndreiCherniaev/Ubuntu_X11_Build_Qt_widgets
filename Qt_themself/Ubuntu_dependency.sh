@@ -17,4 +17,4 @@ source /etc/profile.d/local_bin_to_PATH.sh
 # sudo apt install libxcb-cursor0 -y #usually no need
 # sudo apt-get install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxkbcommon-x11-0 -y #usually no need
 # sudo apt install libxcb-xinerama0 -y #usually no need
-# sudo apt install libfreetypes* -y #usually no need
+# sudo apt install libfreetype* #usually no need
