@@ -1,7 +1,11 @@
 To build Qt (themself) with widgets for Ubuntu 22.
 
 # Ubuntu 22 with X11
-Please switch to Xorg istead of Wayland.
+Please switch to Xorg istead of Wayland. Test
+```
+echo $XDG_SESSION_TYPE
+```
+Should be x11
 
 # Prepare
 ```
@@ -21,10 +25,16 @@ Build Qt themself
 
 # Build example
 ```
-echo $XDG_SESSION_TYPE
+export QT_DEBUG_PLUGINS=1 #usually no need, use in case of error
+"$MyBaseDir/example/readme.sh"
+```
+
+# linuxFB
+This step is optional. If you want try to run your app with linuxfb then use
+```
+# sudo adduser $USER video
 export QT_DEBUG_PLUGINS=1
 # export QT_QPA_PLATFORM=linuxfb
 # export QT_QPA_EGLFS_FB=/dev/fb0
-# sudo adduser $USER video
 "$MyBaseDir/example/readme.sh"
 ```
