@@ -8,6 +8,11 @@ cd "$MyBaseDir"
 ```
 
 # Build Qt themself
+Install dependency
+```
+Qt_themself/Ubuntu_dependency.sh
+```
+Build Qt themself
 ```
 Qt_themself/readme.sh
 ```
