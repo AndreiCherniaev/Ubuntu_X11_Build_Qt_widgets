@@ -21,8 +21,8 @@ and uncomment all strings with "deb-src"
 
 # Prepare
 ```
-git clone https://github.com/AndreiCherniaev/Ubutu_Build_Qt_widgets.git
-export MyBaseDir="$PWD/Ubutu_Build_Qt_widgets"
+git clone https://github.com/AndreiCherniaev/Ubuntu_X11_Build_Qt_widgets.git
+export MyBaseDir="$PWD/Ubuntu_X11_Build_Qt_widgets"
 ```
 
 # Build Qt themself
