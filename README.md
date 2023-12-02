@@ -1,4 +1,4 @@
-To build Qt (themself) with widgets for Ubuntu 22.
+To build Qt (themself) with widgets for Ubuntu 22 (X11 windowing system).
 
 # Ubuntu 22 with X11
 Please switch to Xorg istead of Wayland. Test
