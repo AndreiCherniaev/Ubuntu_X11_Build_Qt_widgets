@@ -9,7 +9,7 @@ sudo apt install libfontconfig1-dev libfreetype6-dev libx11-dev libx11-xcb-dev l
 sudo apt-get install libmd4c-html0 -y
 # Install cmake, nonja via 
 sudo apt install python3-pip -y
-pip install cmake ninja
+pip install cmake ninja --break-system-packages
 
 # Unfochently pip install to some path which is not in PATH. So Ubuntu can't find cmake. Fix it
 # Note1 \$ means that I want use string "$PATH", if I well be use just
