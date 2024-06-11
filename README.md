@@ -17,7 +17,7 @@ Should be x11
 ### modern Ubuntu
 Then make available all dev pack. For Ubuntu 24 and more new
 ```
-sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
+sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
 ```
 ### old Ubuntu
 ```
