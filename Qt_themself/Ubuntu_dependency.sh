@@ -1,5 +1,7 @@
 # host: Ubuntu 22 with X11 (not Wayland)
 # Looks like There are more than enough packages
+
+set -e # in case of error in any line of this script do exit
 if [ "$XDG_SESSION_TYPE" == "x11" ]; then
 
 sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y

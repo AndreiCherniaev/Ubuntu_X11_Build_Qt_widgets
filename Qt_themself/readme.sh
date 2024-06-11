@@ -6,6 +6,7 @@
 # This steps use Qt mirror on github because of fast downloading from github. But you can use 
 # git clone git://code.qt.io/qt/qt5.git qt5
 
+set -e # in case of error in any line of this script do exit
 export MyQtBaseDir="$MyBaseDir/Qt_themself"
 # Prepare Qt
 cd ${MyQtBaseDir}
