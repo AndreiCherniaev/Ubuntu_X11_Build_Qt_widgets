@@ -2,7 +2,9 @@
 # Looks like There are more than enough packages
 
 set -e # in case of error in any line of this script do exit
-if [ "$XDG_SESSION_TYPE" == "x11" ]; then
+if [[ "$XDG_SESSION_TYPE" != "x11" ]]; then
+        echo "war Please use x11"
+fi
 
 sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
 # Thanks https://doc.qt.io/qt-6/linux-requirements.html
@@ -31,7 +33,3 @@ source /etc/profile.d/local_bin_to_PATH.sh
 # sudo apt-get install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxkbcommon-x11-0 -y #usually no need
 # sudo apt install libxcb-xinerama0 -y #usually no need
 # sudo apt install libfreetype* #usually no need
-
-else
-        echo "err Please switch to x11"
-fi
