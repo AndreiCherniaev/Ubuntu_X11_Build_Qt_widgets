@@ -1,6 +1,6 @@
 # host: Ubuntu 22
-# sudo apt-get build-dep cmake ninja-build
 # sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources # https://askubuntu.com/a/1512043/1087530
+# sudo apt-get build-dep cmake ninja-build
 # sudo apt-get build-dep qtbase5-dev
 
 # This steps use Qt mirror on github because of fast downloading from github. But you can use 
