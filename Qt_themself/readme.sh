@@ -1,7 +1,7 @@
 # host: Ubuntu 22
 # sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources # https://askubuntu.com/a/1512043/1087530
 # sudo apt-get build-dep cmake ninja-build
-# sudo apt-get build-dep qtbase5-dev
+# sudo apt-get build-dep qtbase-opensource-src
 
 # This steps use Qt mirror on github because of fast downloading from github. But you can use 
 # git clone git://code.qt.io/qt/qt5.git qt5
