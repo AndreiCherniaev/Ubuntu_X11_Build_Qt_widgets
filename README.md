@@ -1,6 +1,6 @@
-To build Qt (themself) with widgets for Ubuntu 22 (X11 windowing system). See also [Building Qt 6.6 for Raspberry Pi on Raspberry Pi OS](https://www.tal.org/tutorials/building-qt-66-raspberry-pi-raspberry-pi-os) Tested with 22.04.3 LTS
+To build Qt (themself) with widgets for Ubuntu 24 (X11 windowing system). See also [Building Qt 6.6 for Raspberry Pi on Raspberry Pi OS](https://www.tal.org/tutorials/building-qt-66-raspberry-pi-raspberry-pi-os) Tested with 22.04.3 LTS
 
-## Ubuntu 22 with X11
+## Ubuntu with X11
 Please switch to Xorg istead of Wayland. 
 <p align="center">
   <img alt="How switch to X11 in Ubuntu" src="img/How switch to X11 in Ubuntu.png" width="320">
