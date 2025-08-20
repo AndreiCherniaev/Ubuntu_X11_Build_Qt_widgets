@@ -18,7 +18,7 @@ sudo apt-get install libmd4c-html0 -y
 sudo apt install python3-pip -y
 pip install cmake ninja --break-system-packages
 
-# Unfochently pip install to some path which is not in PATH. So Ubuntu can't find cmake. Fix it
+# Unfortunately pip install to some path which is not in PATH. So Ubuntu not find your application, add pip folder to PATH
 # Note1 \$ means that I want use string "$PATH", if I well be use just
 #  export PATH="$PATH:/home/$myName/.local/bin"
 # then in file will be
