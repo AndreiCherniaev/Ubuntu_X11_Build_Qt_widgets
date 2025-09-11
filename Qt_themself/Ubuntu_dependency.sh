@@ -27,7 +27,6 @@ pip install cmake ninja --break-system-packages
 export myName=$USER && sudo -E bash -c 'cat <<EOF > /etc/profile.d/local_bin_to_PATH.sh
 export PATH="\$PATH:/home/$myName/.local/bin"
 EOF'
-sudo chmod a+x /etc/profile.d/local_bin_to_PATH.sh
 # To make "source" works we should run this script with dot 
 # . "$MyBaseDir/Qt_themself/Ubuntu_dependency.sh"
 source /etc/profile.d/local_bin_to_PATH.sh
