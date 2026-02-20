@@ -3,7 +3,7 @@
 # sudo apt-get build-dep cmake ninja-build
 # sudo apt-get build-dep qtbase-opensource-src
 
-# This steps use Qt mirror on github because of fast downloading from github. But you can use 
+# This script uses Qt mirror on github because of fast downloading. But you can use instead
 # git clone git://code.qt.io/qt/qt5.git qt5
 
 set -e # in case of error in any line of this script do exit

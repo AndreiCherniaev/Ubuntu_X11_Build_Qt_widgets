@@ -6,7 +6,7 @@ if [[ "$XDG_SESSION_TYPE" != "x11" ]]; then
         echo "war Please use x11"
 fi
 # Allow deb-src in sources.list
-sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources # https://askubuntu.com/a/1512043/1087530
+sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources # https://askubuntu.com/a/1512042/1087530
 sudo apt update
 
 sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev -y
