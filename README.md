@@ -1,4 +1,4 @@
-To build Qt (themself) with widgets for Ubuntu 24 (X11 windowing system). See also [Building Qt 6.6 for Raspberry Pi on Raspberry Pi OS](https://www.tal.org/tutorials/building-qt-66-raspberry-pi-raspberry-pi-os) Tested with 22.04.3 LTS
+To build Qt (themself) with widgets for Ubuntu 24 (X11 windowing system). See also [Building Qt 6.8 LTS for Raspberry Pi on Raspberry Pi OS]([https://www.tal.org/tutorials/building-qt-66-raspberry-pi-raspberry-pi-os](https://www.tal.org/tutorials/building-qt-68-sub-modules)) Tested with 22.04.3 LTS
 
 ## Ubuntu with X11
 Please switch to Xorg istead of Wayland. 
