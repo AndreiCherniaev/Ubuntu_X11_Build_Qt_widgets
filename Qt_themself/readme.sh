@@ -1,7 +1,6 @@
-# host: Ubuntu 22
-# sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources # https://askubuntu.com/a/1512043/1087530
-# sudo apt-get build-dep cmake ninja-build
-# sudo apt-get build-dep qtbase-opensource-src
+# host: Ubuntu 24
+# sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources && sudo apt update # https://askubuntu.com/a/1512043/1087530
+# sudo apt-get build-dep cmake ninja-build qtbase-opensource-src -y
 
 # This script uses Qt mirror on github because of fast downloading. But you can use instead
 # git clone git://code.qt.io/qt/qt5.git qt5
@@ -27,5 +26,5 @@ cd ${MyQtBaseDir}/build_host_powerfull
 ../qt5/configure -release -static -opensource -nomake examples -nomake tests -confirm-license -skip webengine -skip qtwayland -skip qtdoc -skip qtgraphicaleffects -skip qtqa -skip qttranslations -skip qtvirtualkeyboard -skip qtquicktimeline -skip qtquick3d -skip qt3d -skip qtrepotools -skip qttools -skip qtimageformats -skip qtnetworkauth -skip qtwebsockets -skip qtactiveqt -skip qtmacextras -skip winextras -skip qtmultimedia -skip qtgamepad -skip qtserialbus -skip qtspeech -skip qtsensors -skip qtlocation -no-ssl -prefix ../build_artifacts_host_powerfull -skip qtserialport -skip qtcharts -system-freetype -- -GNinja -DCMAKE_TOOLCHAIN_FILE=../toolchain_host_powerfull.cmake
 cmake --build . --parallel && cmake --install .
 
-# After Qt build successfully you can keep build_artifacts_host_powerfull only (remove source folder qt5/ and build_host_powerfull/)
+# After Qt build successfully you should keep build_artifacts_host_powerfull only (remove source folder qt5/ and build_host_powerfull/)
 gio trash ${MyQtBaseDir}/qt5 ${MyQtBaseDir}/build_host_powerfull
