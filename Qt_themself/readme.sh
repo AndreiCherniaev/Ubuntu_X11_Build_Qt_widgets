@@ -8,9 +8,9 @@
 set -e # in case of error in any line of this script do exit
 export MyQtBaseDir="$MyBaseDir/Qt_themself"
 # Prepare Qt
-cd ${MyQtBaseDir}
+cd "$MyQtBaseDir"
 # Qt's folders must be clear: remove and create its again
-rm -Rf ${MyQtBaseDir}/build_host_powerfull/ ${MyQtBaseDir}/build_artifacts_host_powerfull/ && mkdir ${MyQtBaseDir}/build_host_powerfull ${MyQtBaseDir}/build_artifacts_host_powerfull
+rm -Rf "$MyQtBaseDir/build_host_powerfull/" "$MyQtBaseDir/build_artifacts_host_powerfull/" && mkdir "$MyQtBaseDir/build_host_powerfull" "$MyQtBaseDir/build_artifacts_host_powerfull"
 
 # If you want test another Qr version do: 
 #rm -Rf ${MyQtBaseDir}/qt5/
