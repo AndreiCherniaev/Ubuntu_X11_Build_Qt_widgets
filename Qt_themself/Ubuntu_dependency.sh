@@ -1,4 +1,4 @@
-# host: Ubuntu 22 with X11 (not Wayland)
+# host: Ubuntu 24 with X11 (not Wayland)
 # Looks like There are more than enough packages
 
 set -e # in case of error in any line of this script do exit
