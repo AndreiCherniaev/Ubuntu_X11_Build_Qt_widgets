@@ -19,13 +19,12 @@ sudo apt install python3-pip -y
 pip install cmake ninja --break-system-packages
 
 # Unfortunately pip install to some path which is not in PATH. So Ubuntu not find your application, add pip folder to PATH
-# Note1 \$ means that I want use string "$PATH", if I well be use just
-#  export PATH="$PATH:/home/$myName/.local/bin"
-# then in file will be
+# Note1 \$ means that dollar sign should be kept in string "$PATH", otherwise, for example,
+#  export PATH="$PATH:/home/$SUDO_USER/.local/bin"
+# result file will be (where q is $SUDO_USER)
 #  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/q/.local/bin"
-#Note2 sudo -E means I want to use my user's variables (e.g. variable $myName) even with superuser privileges
-export myName=$USER && sudo -E bash -c 'cat <<EOF > /etc/profile.d/local_bin_to_PATH.sh
-export PATH="\$PATH:/home/$myName/.local/bin"
+sudo bash -c 'cat <<EOF > "/etc/profile.d/local_bin_to_PATH.sh"
+export PATH="\$PATH:/home/$SUDO_USER/.local/bin"
 EOF'
 # To make "source" works we should run this script with dot 
 # . "$MyBaseDir/Qt_themself/Ubuntu_dependency.sh"
