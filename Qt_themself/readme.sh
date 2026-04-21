@@ -6,7 +6,8 @@
 # git clone git://code.qt.io/qt/qt5.git qt5
 
 set -e # in case of error in any line of this script do exit
-export MyQtBaseDir="$MyBaseDir/Qt_themself"
+# $MyBaseDir can contains trash like .. or // so we might clean it
+export MyQtBaseDir="$(realpath "$MyBaseDir/Qt_themself")"
 # Prepare Qt
 cd "$MyQtBaseDir"
 # Qt's folders must be clear: remove and create its again
