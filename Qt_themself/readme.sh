@@ -1,4 +1,5 @@
-# host: Ubuntu 24
+#!/bin/bash
+# host: Ubuntu 24 or 25.10
 # sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources && sudo apt update # https://askubuntu.com/a/1512043/1087530
 # sudo apt-get build-dep cmake ninja-build qtbase-opensource-src -y
 
