@@ -14,7 +14,7 @@ cd "$MyQtBaseDir"
 # Qt's folders must be clear: remove and create its again
 rm -Rf "$MyQtBaseDir/build_host_powerfull/" "$MyQtBaseDir/build_artifacts_host_powerfull/" && mkdir "$MyQtBaseDir/build_host_powerfull" "$MyQtBaseDir/build_artifacts_host_powerfull"
 
-# If you want test another Qr version do: 
+# If you want test another Qt version do: 
 #rm -Rf "$MyQtBaseDir/qt5/"
 git clone https://github.com/qt/qt5 qt5
 cd qt5
