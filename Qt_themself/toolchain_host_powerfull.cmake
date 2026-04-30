@@ -17,7 +17,7 @@ set(FEATURE_widgets ON)
 #set(FEATURE_gui ON)
 #set(FEATURE_sqlmodel OFF)
 #set(FEATURE_sql OFF)
-set(FEATURE_qtwaylandscanner OFF)
+set(FEATURE_wayland OFF)
 set(FEATURE_androiddeployqt OFF)
 #set(testlib OFF)
 #set(X11_SUPPORTED OFF) # more https://bugreports.qt.io/browse/QTBUG-109028
