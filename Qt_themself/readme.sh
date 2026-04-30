@@ -31,7 +31,7 @@ export QT_DEBUG_PLUGINS=1
 # export QT_QPA_EGLFS_FB=/dev/fb0
 
 cd "$MyQtBaseDir/build_host_powerfull"
-"$MyQtDir/configure" -release -static -opensource -nomake examples -nomake tests -confirm-license -ltcg -skip webengine -skip qtwayland -skip qtdoc -skip qtgraphicaleffects -skip qtqa -skip qttranslations -skip qtvirtualkeyboard -skip qtquicktimeline -skip qtquick3d -skip qt3d -skip qtrepotools -skip qttools -skip qtimageformats -skip qtnetworkauth -skip qtwebsockets -skip qtactiveqt -skip qtmacextras -skip winextras -skip qtmultimedia -skip qtgamepad -skip qtserialbus -skip qtspeech -skip qtsensors -skip qtlocation -no-ssl -prefix ../build_artifacts_host_powerfull -skip qtserialport -skip qtcharts -system-freetype -- -GNinja -DCMAKE_TOOLCHAIN_FILE=../toolchain_host_powerfull.cmake
+"$MyQtDir/configure" -release -static -opensource -nomake examples -nomake tests -confirm-license -ltcg -disable-deprecated-up-to 0x061100 -skip webengine -skip qtwayland -skip qtdoc -skip qtgraphicaleffects -skip qtqa -skip qttranslations -skip qtvirtualkeyboard -skip qtquicktimeline -skip qtquick3d -skip qt3d -skip qtrepotools -skip qttools -skip qtimageformats -skip qtnetworkauth -skip qtwebsockets -skip qtactiveqt -skip qtmacextras -skip winextras -skip qtmultimedia -skip qtgamepad -skip qtserialbus -skip qtspeech -skip qtsensors -skip qtlocation -no-ssl -prefix ../build_artifacts_host_powerfull -skip qtserialport -skip qtcharts -system-freetype -- -GNinja -DCMAKE_TOOLCHAIN_FILE=../toolchain_host_powerfull.cmake
 
 cmake --build . --parallel && cmake --install .
 
