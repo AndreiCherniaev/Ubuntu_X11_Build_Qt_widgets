@@ -1,7 +1,7 @@
 #!/bin/bash
 # host: Ubuntu 24
 # sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources && sudo apt update # https://askubuntu.com/a/1512043/1087530
-# sudo apt-get build-dep cmake ninja-build qtbase-opensource-src -y
+# sudo apt build-dep cmake ninja-build qtbase-opensource-src -y
 
 # This script uses Qt mirror on github because of fast downloading. But you can use instead
 # git clone git://code.qt.io/qt/qt5.git qt5
