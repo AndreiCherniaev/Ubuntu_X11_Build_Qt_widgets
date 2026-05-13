@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(myexample LANGUAGES CXX)
+project(myexample LANGUAGES CXX DESCRIPTION "This text will be inside PROJECT_DESCRIPTION variable")
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
