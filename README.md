@@ -38,7 +38,7 @@ Install dependency
 ```
 Build Qt themself
 ```
-"$MyBaseDir/Qt_themself/readme.sh"
+"$MyBaseDir/Qt_themself/readme.sh" keep
 ```
 
 ## Build example
